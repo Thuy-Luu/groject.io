@@ -1,0 +1,528 @@
+/* Class chung */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.clear-fix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    /* Tạo hiệu ứng cuộn # */
+    scroll-behavior:smooth ;
+}
+.white{
+    color: #fff !important;
+}
+.three-col{
+    width: 33.33333%;
+}
+.half-col{
+    padding: 0 8px;
+    width: 50%;
+}
+.full-col{
+    width: 100%;
+}
+.col{
+    float: left;
+    padding: 0 8px;
+}
+.row{ 
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.text-left{
+    text-align: left !important;
+}
+.text-grey{
+    color: #757575!important;
+}
+.mt-4top{
+    margin-top: 4px ;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.pull-right{
+    float: right !important;
+}
+.width-dislay{
+    width: 30px;
+    display: inline-block;
+}
+.s-patop-32{
+    padding-top: 32px;
+}
+/* .pading-w3{
+    padding: 64px 0 112px;
+} */
+/* End */
+
+
+/* 
+1 Vị trí
+2 kích thước
+3 màu sắc
+4 style  */
+#main{
+font-size: 15px;
+line-height: 1.5;
+}
+
+
+#header{
+    height: 48px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav{
+    display: inline-block;
+    
+}
+#nav, .subnav{
+list-style-type: none;
+}
+#nav>li{
+    display: inline-block;
+}
+#nav li{
+    position: relative ;
+}
+#nav >li >a{
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 46.8px;
+}
+#nav li a{
+    padding: 0 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+#nav >li:hover >a,
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc; 
+}
+#nav li:hover .subnav{
+    display: block;
+}
+.subnav.more{
+    display: block !important;
+}
+#nav .subnav{
+    min-width: 160px;
+    box-shadow:  0 4px 10px 0  rgba(0,0,0,0.2);
+    top: 100%;
+    left: 0;
+    position: absolute;
+    display: none;
+   
+}
+#nav .subnav a{
+    padding: 8px 16px;
+    color: black;
+    background-color: #fff;
+}
+#nav .btn-more{
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0 18px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 46.8px;
+    font-size: 15px;
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+
+#nav .btn-more:hover{
+    color: black;
+    background-color: #ccc; 
+}
+
+#nav .ti-angle-down{
+    color: white;
+    font-size: 16px;
+}
+#mobile-menu{
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: none;
+}
+#header .menu-w3,
+#header .search_btn{
+float: right;
+padding: 0 22px;
+}
+#header .menu-w3:hover {
+    background-color: #ccc;
+}
+#header .menu-w3:hover .menu-icon{
+    color: black;
+   
+}
+.menu-w3 .menu-icon,
+#header .search-icon{
+    line-height:46.8px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#header .search_btn:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #f44336;
+}
+/* slider */
+#slider{
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46px;
+    height: 200px;
+    background-color: #ccc;
+    
+    background: url(/W3_band/assets/img/Slider/slider1.jpg) top center/ cover no-repeat;
+}
+
+#slider .text-content{
+    color: #fff;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 32px 16px;
+}
+#slider .text-header{
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 0;
+}
+#slider .text-comment{
+    margin: 15px 0;
+}
+/* Content */
+#content{
+    max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+}
+ .conten-selection{
+    padding: 64px 0 64px;
+    text-align: center;
+    max-width: 800px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 18px;
+    padding-right: 18PX;
+}
+ .selection-heading{
+    margin: 10px 0;
+font-size: 30px;
+font-weight: 400;
+letter-spacing: 4px; 
+}
+ .selection-sub-heading{
+ margin: 15px 0;
+ font-style: italic;
+ opacity: 0.6;
+}
+#content .about-text{
+    line-height: 1.5;
+    text-align: justify;
+
+}
+#content .member-image{
+    display: inline-block;
+    line-height: 1.5;
+    padding: 32px 0;
+  
+   
+}
+#content .member-item{
+    /* height: 212px; */
+    float: left;
+}
+#content .member-name{
+    margin: 15px;
+}
+#content .sub-image{
+    border-radius: 4px;
+    width: 60%;;
+}
+#tour{
+
+    text-align: center;
+    font-size: 15px;
+line-height: 1.5;
+}
+#tour .body-tour{
+    background-color: black;
+}
+#tour .conten-selection {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+}
+#tour .body-tour .table-tour{
+    
+    border: 1px solid #ddd;
+    background-color: #fff;
+    list-style-type: none;
+}
+.table-tour .sub-tour{
+    /* color: black; */
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+.table-tour .row-tour{
+    margin-left: 16px;
+    color: #fff;
+    background-color: #f44336;
+    padding: 0 8px;
+}
+.table-tour .quatily{
+    float: right;
+    background-color: black;
+    width: 24px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+.places-list{
+    padding-bottom: 48px;
+    margin-top: 16px;
+    text-align: left;
+}
+.places-list::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.place-img{
+width: 100%;
+display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-body{
+background-color: #fff;
+color: black;
+padding: 16px;
+}
+.place-heading{
+    font-size: 15px;
+}
+.place-time{
+margin: 16px 0;
+}
+.btn{
+    background-color: black;
+    margin-top: 16px;
+    border: none;
+    cursor: pointer;
+    /* đẻ ôm thằng con */
+/* Hết */
+text-decoration: dashed;
+  color: #fff;
+    display: inline-block;
+    padding: 12px 16px;
+    text-align: center;
+}
+.btn:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+.modal.open{
+    display: flex;
+}
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0,0, 0.4);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+.modal-container{
+    max-width: calc(100% - 64px);
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+    margin: auto;
+    width: 900px;
+  background-color: #fff;
+  position: relative;
+  animation: modalFadeIn ease 0.4s;
+}
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.model-headalder .ti-bag{
+    margin-right: 16px;
+  
+}
+.modal-headalder{
+    text-align: center;
+   color: #fff;
+    font-size: 30px;
+    background-color: #009688;
+    padding: 32px 16px;
+    letter-spacing: 4px;
+}
+.modal-close {
+cursor: pointer;
+    position: absolute;
+  color: #fff;
+  padding: 12px 16px;
+  top: 0;
+  right: 0;
+}
+.modal-close:hover{
+    opacity: 0.5;
+}
+.modal-body{
+    padding: 0 16px;
+}
+.modal-label{
+    display: block;
+  margin-top: 16px;
+}
+.modal-input {
+    padding: 8px;
+    width: 100%;
+    margin-top: 6px;
+}
+.modal-pay{
+    color: #fff;
+    width: 100%;
+    margin: 16px 0;
+    padding: 16px;
+    text-transform: uppercase;
+    background-color: #009688;
+    cursor: pointer;
+    border: none;
+
+}
+.modal-pay:hover{
+    opacity: 0.8;
+}
+.model-footer{
+    margin-bottom: 16px;
+text-align: right;
+}
+.footer-close:hover{
+    color: black;
+    background-color: #ccc;
+   
+}
+.footer-help{
+    font-size: 15px;
+    display: inline-block;
+    margin: 15px 0;
+   
+}
+.footer-help-link{
+    color: blue;
+}
+#contrac{
+
+}
+#contract .contract-info a{
+    color: #0000ff;
+    opacity: 0.8;
+}
+#contract .contract-info a:hover{
+    opacity: 1;
+}
+.contract-sub{
+text-align: left;
+font-size: 18px;
+}
+.contract-box{
+    font-size: 15px;
+    text-align: left;
+}
+.contract-box .form-control{
+width: 100%;
+}
+.row.contract-body {
+    margin-bottom: 8px;
+}
+.form-control{
+    outline: blue;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+}
+.Contrac-send{
+    margin: 16px 0;
+    padding: 12px 18px;
+    background-color: black;
+    color: #fff;
+    float: right;
+    border: none;
+
+}
+.Contrac-send:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+.local-map{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+}
+#footer{
+    color: #000!important;
+}
+.footer-icon {
+background-color: #ccc;
+    padding: 64px 0;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0.6;
+}
+.footer-icon .icon-footer:hover{
+    opacity: 0.6;
+}
+#footer .sub-footer{
+    margin: 15px 0;
+    color: black;
+font-size: 15px;
+}
+.button.modal-pay:active{
+    background-color: #ccc;
+}
